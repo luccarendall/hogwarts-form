@@ -1,30 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Projeto TrybeWarts</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logotipo Trybewarts">
-        <h1 id="trybewarts-header-title">Trybewarts</h1>
-        <form class="trybewarts-login">
-            <input id="email" type="text" name="email" placeholder="Email">
-            <input id="senha" type="text" name="password" placeholder="Senha">
-            <button id="btn-login" type="button">Entrar</button>
-        </form>
+      <img
+        class="trybewarts-header-logo"
+        src="images/trybewarts-header-logo.svg"
+        alt="Logotipo Trybewarts"
+      />
+      <h1 id="trybewarts-header-title">Trybewarts</h1>
+      <form class="trybewarts-login">
+        <input id="email" type="text" name="email" placeholder="Email" />
+        <input id="senha" type="text" name="password" placeholder="Senha" />
+        <button id="btn-login" type="button">Entrar</button>
+      </form>
     </header>
 
     <main>
+      <left>
         <form id="evaluation-form" action="">
-           <h2>Formulário de Avaliação</h2>
-            <input type="text">
+          <h2>Formulário de Avaliação</h2>
+          <input id="input-name" type="text" placeholder="Nome" class="input"/>
+          <input id="input-lastname" type="text" placeholder="Sobrenome" class="input"/>
+          <input id="input-email" type="text" placeholder="Email" class="input"/>
+          <div>
+              <select id="house" class="input">
+                  <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+                  <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+                  <option value="Corvinode" id="corvinode-house">Corvinode</option>
+                  <option value="Pytherina" id="pytherina-house">Pytherina</option>
+              </select>
+          </div>
         </form>
+      </left>
+      <right>
+        <section>
+          <img
+            id="trybewarts-forms-logo"
+            src="images/trybewarts-colored.svg"
+            alt="Logotipo Trybewarts colorido"
+          />
+        </section>
+      </right>
     </main>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
