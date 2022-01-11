@@ -23,6 +23,26 @@ main{
     flex-direction: column;
     width: 675px;
 }
+
+#qualquer {
+    display: flex;
+    flex-direction: row;
+}
+
+#filho1qualquer {
+    display: flex;
+    flex-direction: row;
+}
+
+#filho2qualquer {
+    display: flex;
+    flex-direction: row;
+}
+
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+.input {
+    padding: 10px;
 }
