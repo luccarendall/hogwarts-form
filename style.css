@@ -1,13 +1,24 @@
-header{
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
-}
-
 .header {
     display: flex;
-    flex-direction: row;
     background-color: rgb(50, 167, 145);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.login-input{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px;
+    margin-right: 5px;
+}
+
+h1{
+    color: white;
+}
+
+header img {
+    height: 60px;
 }
 
 .trybewarts-login{
@@ -16,6 +27,7 @@ header{
 
 main{
     display: flex;
+    justify-content: space-around;
 }
 
 #evaluation-form{
@@ -45,4 +57,10 @@ main{
 
 .input {
     padding: 10px;
+}
+
+#section-esquerda-central {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
 }

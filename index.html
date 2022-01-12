@@ -9,15 +9,11 @@
   </head>
   <body>
     <header class="header">
-      <img
-        class="trybewarts-header-logo"
-        src="images/trybewarts-header-logo.svg"
-        alt="Logotipo Trybewarts"
-      />
+      <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logotipo Trybewarts"/>
       <h1 id="trybewarts-header-title">Trybewarts</h1>
       <form class="trybewarts-login">
-        <input id="email" type="text" name="email" placeholder="Email" />
-        <input id="senha" type="text" name="password" placeholder="Senha" />
+        <input id="email" class="login-input" type="text" name="email" placeholder="Email" />
+        <input id="senha" class="login-input" type="text" name="password" placeholder="Senha" />
         <button id="btn-login" type="button">Entrar</button>
       </form>
     </header>
@@ -27,27 +23,15 @@
         <form id="evaluation-form" action="">
           <h2>Formulário de Avaliação</h2>
           <div id="qualquer">
+            
             <div id="filho1qualquer">
-              <input
-                id="input-name"
-                type="text"
-                placeholder="Nome"
-                class="input"
-              />
-              <input
-                id="input-lastname"
-                type="text"
-                placeholder="Sobrenome"
-                class="input"
-              />
+              <input id="input-name" type="text" placeholder="Nome" class="input"/>
+              <input id="input-lastname" type="text" placeholder="Sobrenome" class="input" />
             </div>
+
             <div id="filho2qualquer">
-              <input
-                id="input-email"
-                type="text"
-                placeholder="Email"
-                class="input"
-              />
+              <input id="input-email" type="text" placeholder="Email" class="input"/>
+            
               <div>
                 <label id="labelCasa">Casa: </label>
                 <select id="house" class="input">
@@ -56,10 +40,24 @@
                   <option value="Corvinode" id="corvinode-house">Corvinode</option>
                   <option value="Pytherina" id="pytherina-house">Pytherina</option>
                 </select>
-              </div>
-            </div>
-          </div>
+              </div>  <!--Fecha casa-->
+            </div>  <!--Fecha filho2qualquer-->
+          </div>  <!--Fecha qualquer-->
         </form>
+
+        <section id="section-esquerda-central">
+          <div id="radio-buttons">
+           <!-- Lembrete pessoal: Colocar mesmo nome na id e no for para aumentar a área de contato -->
+            <label id="label-family">Qual sua família?</label><br>
+            <input type="radio" id="family-frontend" value="Frontend" name="family" checked="">
+            <label for="family-frontend">Familia Frontend</label><br>
+            <input type="radio" id="family-backend" value="Backend" name="family">
+            <label for="family-backend">Familia Backend</label><br>
+            <input type="radio" id="family-fullstack" value="FullStack" name="family">
+            <label for="family-fullstack">Familia Fullstack</label>
+          </div>
+          
+        </section>
       </left>
       <right>
         <section>
