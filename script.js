@@ -1,6 +1,8 @@
 const btnLogin = document.getElementById('btn-login');
 const email = document.getElementById('email');
 const senha = document.getElementById('senha');
+const btnEnviar = document.getElementById('submit-btn');
+const confirmaAcordo = document.getElementById('agreement');
 
 email.addEventListener('input', () => {
   console.log('um');
@@ -23,3 +25,19 @@ btnLogin.addEventListener('click', () => {
 
   verificaEmail();
 });
+
+btnEnviar.disabled = true;
+
+function ativaEnvioFormulario() {
+  if (confirmaAcordo.checked) {
+    btnEnviar.disabled = false;
+    btnEnviar.classList.add('colorBtn');
+    btnEnviar.classList.remove('btnDisabled');
+  } else {
+    btnEnviar.disabled = true;
+    btnEnviar.classList.remove('colorBtn');
+    btnEnviar.classList.add('btnDisabled');
+  }
+}
+
+confirmaAcordo.addEventListener('click', ativaEnvioFormulario);
