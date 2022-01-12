@@ -30,7 +30,7 @@ main{
     justify-content: space-around;
 }
 
-#evaluation-form{
+#evaluation-form {
     display: flex;
     flex-direction: column;
     width: 675px;
@@ -61,6 +61,19 @@ main{
 
 #section-esquerda-central {
     display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+hr {
+    border: 0;
+    display: block;
+    width: 98%;
+    background-color: gray;
+    height: 2px;
+    margin: 20px;
+}
+
+a,b{
+    display: flex;
 }
