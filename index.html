@@ -43,27 +43,31 @@
               </div>  <!--Fecha casa-->
             </div>  <!--Fecha filho2qualquer-->
           </div>  <!--Fecha qualquer-->
-        </form>
+        <!-- </form> -->
 
         <hr>
 
         <section id="section-esquerda-central">
+        <!-- Lembrete pessoal: Colocar mesmo nome na id e no for para aumentar a área de contato -->
           <div>
-           <!-- Lembrete pessoal: Colocar mesmo nome na id e no for para aumentar a área de contato -->
-            <label id="label-family">Qual sua família?</label>
-            <br><br>
-            <input type="radio" id="family-frontend" value="Frontend" name="family" checked="">
-            <label for="family-frontend">Familia Frontend</label>
-            <br>
-            <input type="radio" id="family-backend" value="Backend" name="family">
-            <label for="family-backend">Familia Backend</label>
-            <br>
-            <input type="radio" id="family-fullstack" value="FullStack" name="family">
-            <label for="family-fullstack">Familia Fullstack</label>
+            <label id='label-family'>Qual sua família?</label>
+            <div>
+              <input type="radio" name="family" value='Frontend' id="">
+              <label for="family">Frontend</label>
+            </div>
+            <div>
+              <input type="radio" name="family" value='Backend' id="">
+              <label for="family">Backend</label>
+            </div>
+            <div>
+              <input type="radio" name="family" value='FullStack' id="">
+              <label for="family">FullStack</label>
+            </div>
           </div>
+        </form>
           
           <div id="checkbox-buttons">
-            <label id="label-content">Qual conteúdo você está com mais vontade de aprender? </label><br>
+            <label id="label-content">Qual conteúdo você está com mais vontade de aprender? </label>
             <div>
               <br>
             <a>
@@ -118,15 +122,13 @@
               <label id="label-infos">Você concorda com o uso das informações acima?</label>
               <input type="checkbox" name="agreement" id="agreement" />
           </div>
+
           <button  id="submit-btn" class="input btnDisabled" type="submit">Enviar</button>
       </left>
+      
       <right id="right-section">
         <section>
-          <img
-            id="trybewarts-forms-logo"
-            src="images/trybewarts-colored.svg"
-            alt="Logotipo Trybewarts colorido"
-          />
+          <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Logotipo Trybewarts colorido"/>
         </section>
       </right>
     </main>
